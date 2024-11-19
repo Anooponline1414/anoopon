@@ -1,0 +1,303 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* .banner {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    position: relative;
+} */
+
+
+/* Make all images responsive */
+img {
+    max-width: 100%;
+    /* Ensures the image scales down if it's larger than its container */
+    height: auto;
+    /* Maintains the aspect ratio */
+    display: block;
+    /* Removes extra space at the bottom of the image */
+}
+
+/* Optional: Add a container to control image alignment */
+.image-container {
+    width: 100%;
+    /* Full width of the screen */
+    max-width: 1200px;
+    /* Optional: Limits the maximum size */
+    margin: 0 auto;
+    /* Centers the image horizontally */
+    padding: 10px;
+    /* Adds some padding around the image */
+}
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: gold;
+}
+
+.tagline {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px 0;
+    color: rgb(0, 24, 144);
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.features {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.features span {
+    display: inline-block;
+    background-color: gold;
+    color: #000;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.contact-note {
+    font-size: 23px;
+    margin: 10px 0;
+    color: #001eff;
+}
+
+.disclaimer {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #555;
+}
+
+.welcome {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .features span {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        padding: 20px 10px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 58px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .features span {
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .disclaimer {
+        font-size: 12px;
+    }
+
+    .welcome {
+        font-size: 14px;
+    }
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.divider {
+    width: 80%;
+    margin: 10px auto;
+    border: 0;
+    border-top: 2px dashed #333;
+}
+
+.highlight {
+    font-weight: bold;
+    color: purple;
+    background: #eaeaea;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.services {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.services li {
+    font-size: 16px;
+    background-color: #e8f5e9;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.cta-section {
+    margin-top: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-text {
+    font-size: 14px;
+    margin: 15px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.cta-whatsapp {
+    display: inline-block;
+    font-size: 20px;
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services {
+        gap: 10px;
+    }
+
+    .services li {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .cta-text {
+        font-size: 13px;
+    }
+
+    .cta-whatsapp {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        flex-direction: column;
+    }
+
+    .cta-button {
+        font-size: 49px;
+        padding: 8px 15px;
+    }
+
+    .cta-text {
+        font-size: 12px;
+    }
+
+    .cta-whatsapp {
+        font-size: 16px;
+    }
+}
